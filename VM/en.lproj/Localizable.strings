@@ -1,0 +1,46 @@
+/* --- Sidebar & Main UI --- */
+"Tạo máy ảo mới" = "Create New VM";
+"Chọn máy ảo để bắt đầu" = "Select a VM to start";
+"Cài đặt máy ảo: %@" = "VM Settings: %@";
+"Đang chạy" = "Running";
+"Khởi động" = "Start";
+"Dừng" = "Stop";
+"Chạy" = "Start";
+
+/* --- Hardware Configuration --- */
+"Cấu hình phần cứng" = "Hardware Configuration";
+"Tên hiển thị:" = "Display Name:";
+"CPU: %lld Cores" = "CPU: %lld Cores";
+"RAM (MB):" = "RAM (MB):";
+"Kiến trúc:" = "Architecture:";
+"Độ phân giải:" = "Resolution:";
+"Thông tin hệ thống" = "System Information";
+"Thư mục lưu trữ:" = "Storage Folder:";
+"Chưa rõ" = "Unknown";
+"Ổ đĩa chính:" = "Main Disk:";
+
+/* --- Delete VM Confirmation --- */
+"Xóa máy ảo %@?" = "Delete virtual machine %@?";
+"Dữ liệu trong thư mục sẽ bị xóa vĩnh viễn nếu bạn chọn 'Xóa sạch file'." = "Data in the folder will be permanently deleted if you choose 'Delete all files'.";
+"Xóa sạch file" = "Delete all files";
+"Chỉ xóa khỏi danh sách" = "Remove from list only";
+"Hủy" = "Cancel";
+
+/* --- Add New VM (Alerts & Panels) --- */
+"Tên máy ảo mới" = "New Virtual Machine Name";
+"Nhập tên để tạo thư mục riêng cho máy ảo này." = "Enter a name to create a dedicated folder for this VM.";
+"Tiếp tục" = "Continue";
+"Chọn file ISO hoặc ổ đĩa gốc" = "Select ISO file or base disk image";
+"Chọn nơi lưu thư mục máy ảo" = "Select VM folder location";
+"Cấu hình phần cứng cho %@" = "Hardware configuration for %@";
+"Kiến trúc CPU:" = "CPU Architecture:";
+"CPU (Cores):" = "CPU (Cores):";
+"Tạo ổ đĩa mới (MB) [0 để dùng đĩa gốc]:" = "Create new disk (MB) [0 to use base disk]:";
+"Tạo VM" = "Create VM";
+"Lỗi tạo thư mục: %@" = "Folder creation error: %@";
+
+/* --- Processing States & Errors --- */
+"Đang tạo đĩa..." = "Creating disk...";
+"Đang copy đĩa..." = "Copying disk...";
+"Đang convert: %lld%%" = "Converting: %lld%%";
+"Lỗi đường dẫn QEMU" = "QEMU Path Error";

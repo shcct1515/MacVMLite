@@ -1,0 +1,50 @@
+/* ========================================= */
+/* VIETNAMESE LOCALIZATION (Localizable.strings) */
+/* ========================================= */
+
+/* --- Sidebar & Main UI --- */
+"Tạo máy ảo mới" = "Tạo máy ảo mới";
+"Chọn máy ảo để bắt đầu" = "Chọn máy ảo để bắt đầu";
+"Cài đặt máy ảo: %@" = "Cài đặt máy ảo: %@";
+"Đang chạy" = "Đang chạy";
+"Khởi động" = "Khởi động";
+"Dừng" = "Dừng";
+"Chạy" = "Chạy";
+
+/* --- Hardware Configuration --- */
+"Cấu hình phần cứng" = "Cấu hình phần cứng";
+"Tên hiển thị:" = "Tên hiển thị:";
+"CPU: %lld Cores" = "CPU: %lld Cores";
+"RAM (MB):" = "RAM (MB):";
+"Kiến trúc:" = "Kiến trúc:";
+"Độ phân giải:" = "Độ phân giải:";
+"Thông tin hệ thống" = "Thông tin hệ thống";
+"Thư mục lưu trữ:" = "Thư mục lưu trữ:";
+"Chưa rõ" = "Chưa rõ";
+"Ổ đĩa chính:" = "Ổ đĩa chính:";
+
+/* --- Delete VM Confirmation --- */
+"Xóa máy ảo %@?" = "Xóa máy ảo %@?";
+"Dữ liệu trong thư mục sẽ bị xóa vĩnh viễn nếu bạn chọn 'Xóa sạch file'." = "Dữ liệu trong thư mục sẽ bị xóa vĩnh viễn nếu bạn chọn 'Xóa sạch file'.";
+"Xóa sạch file" = "Xóa sạch file";
+"Chỉ xóa khỏi danh sách" = "Chỉ xóa khỏi danh sách";
+"Hủy" = "Hủy";
+
+/* --- Add New VM (Alerts & Panels) --- */
+"Tên máy ảo mới" = "Tên máy ảo mới";
+"Nhập tên để tạo thư mục riêng cho máy ảo này." = "Nhập tên để tạo thư mục riêng cho máy ảo này.";
+"Tiếp tục" = "Tiếp tục";
+"Chọn file ISO hoặc ổ đĩa gốc" = "Chọn file ISO hoặc ổ đĩa gốc";
+"Chọn nơi lưu thư mục máy ảo" = "Chọn nơi lưu thư mục máy ảo";
+"Cấu hình phần cứng cho %@" = "Cấu hình phần cứng cho %@";
+"Kiến trúc CPU:" = "Kiến trúc CPU:";
+"CPU (Cores):" = "CPU (Cores):";
+"Tạo ổ đĩa mới (MB) [0 để dùng đĩa gốc]:" = "Tạo ổ đĩa mới (MB) [0 để dùng đĩa gốc]:";
+"Tạo VM" = "Tạo VM";
+"Lỗi tạo thư mục: %@" = "Lỗi tạo thư mục: %@";
+
+/* --- Processing States & Errors --- */
+"Đang tạo đĩa..." = "Đang tạo đĩa...";
+"Đang copy đĩa..." = "Đang copy đĩa...";
+"Đang convert: %lld%%" = "Đang convert: %lld%%";
+"Lỗi đường dẫn QEMU" = "Lỗi đường dẫn QEMU";
