@@ -215,10 +215,26 @@ class VMManager: ObservableObject {
         var args: [String] = [
             "-m", "\(vm.ramMB)",
             "-smp", "\(vm.cpuCount)",
-            "-drive", "file=\(vm.diskPath),format=raw,if=virtio",
             "-boot", "menu=on,order=dc",
             "-display", "cocoa,show-cursor=on,zoom-to-fit=on"
         ]
+        
+        // =========================================
+        // CHỈ ĐỊNH THƯ MỤC BIOS CHO QEMU
+        // =========================================
+        if useBundledQEMU {
+            if let biosURL = Bundle.main.url(forResource: "bios", withExtension: nil) {
+                args.append(contentsOf: ["-L", biosURL.path])
+            } else if let resourcePath = Bundle.main.resourcePath {
+                args.append(contentsOf: ["-L", resourcePath])
+            }
+        }
+        
+        // =========================================
+        // TỐI ƯU Ổ ĐĨA
+        // =========================================
+        let driveIf = isARM ? "virtio" : "ide"
+        args.append(contentsOf: ["-drive", "file=\(vm.diskPath),format=raw,if=\(driveIf)"])
         
         if let iso = vm.isoPath, !iso.isEmpty {
             args.append(contentsOf: ["-cdrom", iso])
@@ -240,12 +256,14 @@ class VMManager: ObservableObject {
             ])
         } else {
             args.append(contentsOf: [
+                "-M", "q35",
+                "-cpu", "qemu64",
                 "-vga", "std",
-                "-netdev", "user,id=net0",
                 "-device", "qemu-xhci",
                 "-device", "usb-kbd",
                 "-device", "usb-tablet",
-                "-device", "virtio-net-pci,netdev=net0,romfile="
+                "-netdev", "user,id=net0",
+                "-device", "e1000,netdev=net0,romfile=" // Driver ethernet
             ])
         }
         

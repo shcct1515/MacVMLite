@@ -8,7 +8,7 @@ import Foundation
 
 enum OSType: String, Codable, CaseIterable {
     case linux = "Linux (Ubuntu/Fedora)"
-    case windows = "Windows ARM"
+    case windows = "Windows"
 }
 
 // THÊM ENUM

@@ -90,6 +90,11 @@
 /* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		CA6379B22FA1FB0A00CD48DA /* bios */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = bios;
+			sourceTree = "<group>";
+		};
 		CAC95CEB2F92923300593A2F /* VM */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
@@ -106,6 +111,7 @@
 			children = (
 				CAC95CEB2F92923300593A2F /* VM */,
 				CAC95CFE2F929B2800593A2F /* MacVMLite.app */,
+				CA6379B22FA1FB0A00CD48DA /* bios */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +131,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
+				CA6379B22FA1FB0A00CD48DA /* bios */,
 				CAC95CEB2F92923300593A2F /* VM */,
 			);
 			name = MacVMLite;
